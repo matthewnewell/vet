@@ -3,16 +3,16 @@ require 'pry'
 
 appointments = Roo::Excelx.new('inputs/appointments.xlsx')
 
-binding.pry
+appointments_worksheet = appointments.sheet(0)
 
-# Try these commands in pry. Type 'exit' to get out of pry.
-# appointments
-# appointments.class
-# appointments.info
-# appointments.sheet(0)
-# appointments.sheet(0).row(1)
+appointments_worksheet.each(
+  name: 'Pet Name',
+  date: 'Appointment Date'
+  ) do |hash|
+  puts hash.inspect
+end
 
-# More advanced
-# appointments.methods
-# cd appointments 
-# ls  --> displays object's instance variables
+# hash.inspect returns
+# {:name=>"Pet Name", :date=>"Appointment Date"}
+# {:name=>"Fluffy", :date=>"Monday"}
+
