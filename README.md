@@ -29,8 +29,7 @@ Intermediate-Beginner Ruby Programmer
     <td>Configuration Management</td>
     <td>
       cd repros <br>
-      git clone https://github.com/matthewnewell/vet.git <br>
-      git checkout v0.1
+      git clone https://github.com/matthewnewell/vet.git
     </td>
   </tr>
   <tr>
