@@ -27,11 +27,13 @@ class Appointments
   end
 
   def report_todays_appointments(date)
+    todays_appointments = []
     @appointments_hash.each do |key, value|
-      if value[:date] == "Wednesday"
-        puts "#{value[:name]} has an appointment on #{value[:date]}."
+      if value[:date] == date
+        todays_appointments << "#{value[:name]} has an appointment on #{value[:date]}."
       end
     end
+    puts todays_appointments
   end
 end
 
