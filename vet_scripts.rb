@@ -13,4 +13,9 @@ appointments_worksheet.each(
   binding.pry
 end
 
+# Try these commands in pry. Type 'exit' to continue iteration.
+# hash.keys
+# hash.values
+# hash[:name]
+# hash[:date]
 
