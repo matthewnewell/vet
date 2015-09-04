@@ -22,4 +22,8 @@ appointments_worksheet.each(
   appointments_hash_counter += 1
 end
 
-binding.pry
+appointments_hash.each do |key, value|
+  if value[:date] == "Wednesday"
+    puts "#{value[:name]} has an appointment on #{value[:date]}."
+  end
+end
