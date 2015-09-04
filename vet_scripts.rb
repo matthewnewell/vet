@@ -10,9 +10,7 @@ appointments_worksheet.each(
   date: 'Appointment Date'
   ) do |hash|
   puts hash.inspect
+  binding.pry
 end
 
-# hash.inspect returns
-# {:name=>"Pet Name", :date=>"Appointment Date"}
-# {:name=>"Fluffy", :date=>"Monday"}
 
