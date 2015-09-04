@@ -12,7 +12,7 @@ binding.pry
 # appointments.sheet(0)
 # appointments.sheet(0).row(1)
 
-# More advanced users
+# More advanced
 # appointments.methods
 # cd appointments 
 # ls  --> displays object's instance variables
