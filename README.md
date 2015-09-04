@@ -35,12 +35,12 @@ Intermediate-Beginner Ruby Programmer
   </tr>
   <tr>
     <td>pry</td>
-    <td>Source Code Browsing</td>
+    <td>Browse source code during execution</td>
     <td>gem install pry</td>
   </tr>
   <tr>
     <td>roo</td>
-    <td>Ruby interface to spreadsheets</td>
+    <td>Reads spreadsheets into a Ruby object.</td>
     <td>gem install roo</td>
   </tr>
 </table>
