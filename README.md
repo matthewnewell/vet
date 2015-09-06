@@ -46,6 +46,8 @@ Intermediate-Beginner Ruby Programmer
 
 There are seven git tags in this tutorial. Type `git tag` to view all tags. To get started, type `git checkout tag v0.1`. When you have mastered this tag, go on to `git checkout tag v0.2`. Continue through all the tags.
 
+When you have completed all the tags, try the test in `get checkout master`. To run the test, type `ruby vet_scripts_test.rb`.
+
 ### git tag v0.1
 
 + Create a Roo object from our Excel file
