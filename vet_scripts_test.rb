@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require "minitest/reporters"
+require 'minitest/reporters'
 Minitest::Reporters.use!
 
 require_relative 'vet_scripts'
@@ -26,8 +26,8 @@ class AppointmentsTest < MiniTest::Test
     appointment = Appointments.new
     appointment.read_excel_file('inputs/appointments.xlsx')
     appointment.add_excel_data_to_appointments_hash
-    assert_equal appointment.instance_variable_get(:@appointments_hash).first, [:id_1, {:name=>"Pet Name", :date=>"Appointment Date"}]
-    a= appointment.instance_variable_get(:@appointments_hash)
+    assert_equal appointment.instance_variable_get(:@appointments_hash).first, 
+    [:id_1, {:name=>"Pet Name", :date=>"Appointment Date"}]
   end
 
   def test_hash_key_is_a_symbol
@@ -65,7 +65,9 @@ class AppointmentsTest < MiniTest::Test
     appointment = Appointments.new
     appointment.read_excel_file('inputs/appointments.xlsx')
     appointment.add_excel_data_to_appointments_hash
-    assert_equal appointment.report_todays_appointments("Wednesday"), ["Rex has an appointment on Wednesday.", "Mittens has an appointment on Wednesday."]
+    assert_equal appointment.report_todays_appointments("Wednesday"), 
+    ["Rex has an appointment on Wednesday.", 
+     "Mittens has an appointment on Wednesday."]
   end
 
 end
